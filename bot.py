@@ -1,6 +1,4 @@
-Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
->>> import discord
+import discord
 from discord.ext import commands
 import asyncio
 import random
@@ -247,6 +245,4 @@ async def on_message(message):
 token = os.environ.get ('BOT_TOKEN')
 
 bot.run(str(token)
-        
-SyntaxError: multiple statements found while compiling a single statement
->>> 
+
