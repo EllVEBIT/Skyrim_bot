@@ -1,0 +1,10 @@
+discord
+asyncio
+random
+datetime
+time 
+wikipedia
+bs4
+requests 
+json
+BeautifulSoup
