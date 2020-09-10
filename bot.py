@@ -11,8 +11,7 @@ from bs4 import BeautifulSoup
 import requests 
 import json
 import os 
- 
-token = 'NzUyODM2NDA0MzYyNjA4NjQx.X1dbiQ.MgCR_oeDqgQmjYvbDeknmh9maKQ'
+
 bot = commands.Bot(command_prefix='Скайрим ')
 bot.remove_command('help')
  
