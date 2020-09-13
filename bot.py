@@ -175,7 +175,18 @@ async def переведи(ctx, lang: str, r: str, *, text):
     result = t.translate(text, src = lang, dest = r)
     emb = discord.Embed(title = f'Перевод: \n result.text', colour = discord.Colour.green())
     await ctx.send(embed = emb)
- 
+
+@bot.command()
+async def info(ctx,member:discord.Member):
+  emb = discord.Embed(title='Информация о пользователе',color=0xff80ff)
+  emb.add_field(name="Когда присоединился:",value=member.joined_at,inline=False)
+  emb.add_field(name="Никнейм:",value=member.display_name,inline=False)
+  emb.add_field(name="ID",value=member.id,inline= False)
+  emb.add_field(name="Аккаунт был создан:",value=member.created_at.strftime("%#d %B %Y  %I:%M %p"),inline=False)
+  emb.set_thumbnail(url=member.avatar_url)
+  await ctx.send(embed = emb)
+
+
 @bot.event
 async def on_message(message):
  if message:
