@@ -177,7 +177,7 @@ async def переведи(ctx, lang: str, r: str, *, text):
     await ctx.send(embed = emb)
 
 @bot.command()
-async def info(ctx,member:discord.Member):
+async def инфо(ctx,member:discord.Member):
   emb = discord.Embed(title='Информация о пользователе',color=0xff80ff)
   emb.add_field(name="Когда присоединился:",value=member.joined_at,inline=False)
   emb.add_field(name="Никнейм:",value=member.display_name,inline=False)
